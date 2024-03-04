@@ -23,3 +23,27 @@ console.log(miRectangulopequeño.obtenerInfo())
 //reutilizar parametros
 
 console.log(miRectangulo.ancho);
+
+//Other example
+
+class Coder {
+    constructor(name, email, femCoder)
+    {
+        this.name = name;
+        this.email = email;
+        this.femCoder = femCoder;
+    }
+    saludar(){
+        return `Hola soy ${this.name}`
+    }
+}
+
+const Alba = new Coder("Alba", "alba@gmail.com", true);
+
+console.log(Alba)
+console.log(Alba.saludar())
+
+const Triana = new Coder ("Triana", "Triana@gmail.com", true);
+
+console.log(Triana)
+console.log(Triana.saludar())
