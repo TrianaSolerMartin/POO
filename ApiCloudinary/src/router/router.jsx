@@ -1,11 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
-import LayoutPublic from "../components/layout";
-import Home from "../components/home/Home";
-import NewItem from "../components/newitem/NewItem";
-import Edit from "../components/edit/Edit";
-import Footer from "../components/footer/footer";
-import Gallery from "../components/gallery/Gallery";
-import Card from "../components/card/Card";
+import LayoutPublic from "../components/Layout";
+import Home from "../components/pages/Home";
+import Edit from "../components/edit/EditFile";
+import Footer from "../components/footer/Footer";
+import Card from "../components/filecard/FileCard";
+import NewItem from "../components/newfile/NewFile";
 
 
 export const router = createBrowserRouter([
@@ -23,16 +22,12 @@ export const router = createBrowserRouter([
       element: <Footer/>
     },
     {
-      path: "/NewItem",
+      path: "/NewFile",
       element: <NewItem/>,
     },
     {
       path: "/Edit/:id",
       element: <Edit/>
-    },
-    {
-      path: "/Gallery",
-      element: <Gallery/>
     },
     {
       path: "/card/:id",
